@@ -67,7 +67,7 @@ public class MyCrawler extends WebCrawler {
 				
 				Elements paras = doc.select("#mw-content-text h2,p");
 				for(Element ele: paras){
-				    out.write(ele.text().replaceAll("\\(.*\\)", "")+"\n");
+				    out.write(ele.text().replaceAll("\\(.*?\\) ?", "")+"\n");
 				}
 				
 				out.flush();
