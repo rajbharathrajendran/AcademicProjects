@@ -1,0 +1,29 @@
+#unigram
+#word
+U00:%x[0,0]
+#part of speech
+U01:%x[0,1]
+
+# word/part_of_speech
+U04:%x[0,0]/%x[0,1]
+
+#prev POS / POS
+U05:%x[-1,1]/%x[0,1]
+
+#window of words
+#previous word
+U06:%x[-1,0]
+U07:%x[-2,0]
+
+#next two words
+U08:%x[1,0]
+U09:%x[2,0]
+
+#Root words
+U10:%x[0,2]
+
+#Suffix
+U11:%x[0,3]
+
+#Automatically create all bigram features
+B

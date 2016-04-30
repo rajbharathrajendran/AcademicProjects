@@ -1,0 +1,20 @@
+#unigram
+#word
+U00:%x[0,0]
+
+#previous word
+U01:%x[-1,0]
+
+#next word
+U03:%x[1,0]
+
+#Root word
+U05:%x[0,2]
+
+#Suffix
+#U07:%x[0,4]
+#U08:%x[0,5]
+
+#Bigram words
+U23:%x[-1,0]%x[0,0]
+U23:%x[0,0]%x[1,0]

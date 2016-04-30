@@ -1,0 +1,46 @@
+#unigram
+#word
+U00:%x[0,0]
+
+#previous word
+U01:%x[-1,0]
+U02:%x[-2,0]
+
+#next two words
+U03:%x[1,0]
+U04:%x[2,0]
+
+#Root words
+U05:%x[0,2]
+
+#Suffix
+U06:%x[0,3]
+U07:%x[0,4]
+U08:%x[0,5]
+
+#part of speech
+U10:%x[-2,1]
+U11:%x[-1,1]
+U12:%x[0,1]
+U13:%x[1,1]
+U14:%x[2,1]
+
+U71:%x[-2,1]%x[-1,1]
+U72:%x[-1,1]%x[0,1]
+U73:%x[0,1]%x[1,1]
+U74:%x[1,1]%x[2,1]
+
+U75:%x[-2,1]%x[-1,1]%x[0,1]
+U76:%x[-1,1]%x[0,1]%x[1,1]
+U77:%x[0,1]%x[1,1]%x[2,1]
+
+U23:%x[0,0]/%x[0,1]
+
+U24:%x[0,0]%x[0,1]
+
+#suffix bigrams
+U64:%x[0,0]%x[0,3]
+U65:%x[0,1]%x[0,3]
+
+#Automatically create all bigram features
+#B
