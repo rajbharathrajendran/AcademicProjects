@@ -86,8 +86,10 @@ def pos_ner_data(pos_folder, ner_folder):
 def main():
 
     #This code is the combiner
-    NER_FOLDER = "/home/maxsteal/nlp/ner-merge/ner-data"
-    POS_DATA = "/home/maxsteal/nlp/ner-merge/pos_data"
+    #NER_FOLDER = "/home/maxsteal/nlp/ner-merge/ner-data"
+    #POS_DATA = "/home/maxsteal/nlp/ner-merge/pos_data"
+    NER_FOLDER = sys.args[1]
+    POS_DATA = sys.args[2]
     pos_ner_data(POS_DATA, NER_FOLDER)
     
 
